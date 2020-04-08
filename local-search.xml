@@ -5,8 +5,8 @@
   
   <entry>
     <title>使用hexo+github 搭建个人博客</title>
-    <link href="/2020/04/07/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <url>/2020/04/07/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <link href="/posts/298c18ca.html"/>
+    <url>/posts/298c18ca.html</url>
     
     <content type="html"><![CDATA[<p>我是一名技术不咋滴的前端开发工程师，一直以来都想搭建一个个人的博客，用来整理和记录日常的生活和学习心得，但是……（此处省略一万字），今天终于“它来了，它来了~”。</p><!-- 欢迎来到[Hexo](https://hexo.io/)! 这是你的第一篇文章。 查看 [文档](https://hexo.io/docs/) 了解更多信息。 如果你在使用Hexo时遇到任何问题， 你可以在[故障排除](https://hexo.io/docs/troubleshooting.html)中找到答案，或者你可以在[GitHub](https://github.com/hexojs/hexo/issues)上问我。 --><h3 id="创建一篇文章"><a href="#创建一篇文章" class="headerlink" title="创建一篇文章"></a>创建一篇文章</h3><pre><code class="bash">$ hexo new &quot;文章标题&quot;</code></pre><p>更多信息: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">创作文章</a></p><h3 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h3><pre><code class="bash">$ hexo server</code></pre><p>更多信息: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">启动服务</a></p><h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><pre><code class="bash">$ hexo generate</code></pre><p>更多信息: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">生成文件</a></p><h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><pre><code class="bash">$ hexo deploy</code></pre><p>更多信息: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">站点部署</a></p>]]></content>
     
@@ -28,8 +28,8 @@
   
   <entry>
     <title>我的第一篇文章</title>
-    <link href="/2020/04/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-    <url>/2020/04/07/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <link href="/posts/7a776471.html"/>
+    <url>/posts/7a776471.html</url>
     
     <content type="html"><![CDATA[<p>你好，欢迎来到我的个人技术博客。</p>]]></content>
     
