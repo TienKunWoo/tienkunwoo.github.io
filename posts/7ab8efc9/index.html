@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="吴意外i">
   <meta name="keywords" content="">
-  <title>使用hexo+github 搭建个人博客 - 吴意外i</title>
+  <title>javascript Array 对象 - 吴意外i</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css" />
 <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
@@ -41,7 +41,7 @@
 
 
 <body>
-  <header style="height: 70vh;">
+  <header style="height: 50vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -130,7 +130,7 @@
               
                 <p class="mt-3 post-meta">
                   <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-                  星期二, 四月 7日 2020, 10:27 上午
+                  星期三, 四月 8日 2020, 9:07 上午
                 </p>
               
 
@@ -139,7 +139,7 @@
                   
                   <span class="post-meta">
                     <i class="far fa-chart-bar"></i>
-                    137 字
+                    277 字
                   </span>
                 
 
@@ -149,7 +149,7 @@
                       <i class="far fa-clock"></i>
                     
                     
-                    1
+                    3
                      分钟
                   </span>
                 
@@ -178,40 +178,57 @@
           <div class="post-content mx-auto" id="post">
             
             <div class="markdown-body">
-              <p>我是一名技术不咋滴的前端开发工程师，一直以来都想搭建一个个人的博客，用来整理和记录日常的生活和学习心得，但是……（此处省略一万字），今天终于“它来了，它来了~”。</p>
-<!-- 欢迎来到[Hexo](https://hexo.io/)! 这是你的第一篇文章。 查看 [文档](https://hexo.io/docs/) 了解更多信息。 如果你在使用Hexo时遇到任何问题， 你可以在[故障排除](https://hexo.io/docs/troubleshooting.html)中找到答案，或者你可以在[GitHub](https://github.com/hexojs/hexo/issues)上问我。 -->
-
-
-
-<h3 id="创建一篇文章"><a href="#创建一篇文章" class="headerlink" title="创建一篇文章"></a>创建一篇文章</h3><pre><code class="bash">$ hexo new &quot;文章标题&quot;</code></pre>
-<p>更多信息: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">创作文章</a></p>
-<h3 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h3><pre><code class="bash">$ hexo server</code></pre>
-<p>更多信息: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">启动服务</a></p>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><pre><code class="bash">$ hexo generate</code></pre>
-<p>更多信息: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">生成文件</a></p>
-<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><pre><code class="bash">$ hexo deploy</code></pre>
-<p>更多信息: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">站点部署</a></p>
-
+              <h2 id="Array对象"><a href="#Array对象" class="headerlink" title="Array对象"></a><strong>Array对象</strong></h2><p>Array 对象用于在变量中存储多个值:</p>
+<pre><code class="javascript"> var arr = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;]; 
+ //以下所有数组操作以当前数组为例
+ // 所有console.log后面的注释均为输出结果</code></pre>
+<p>第一个数组元素的索引值为 0，第二个索引值为 1，以此类推。</p>
+<h2 id="数组属性"><a href="#数组属性" class="headerlink" title="数组属性"></a><strong>数组属性</strong></h2><h3 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a><strong>constructor</strong></h3><p> 返回创建数组对象的原型函数。</p>
+<p> 兼容性： 所有主流浏览器都支持 constructor 属性。<br> 语法：</p>
+<pre><code class="javascript"> console.log(arr.constructor) // function Array() { [native code] }</code></pre>
+<p> JavaScript 版本: 1.1</p>
+<h3 id="length"><a href="#length" class="headerlink" title="length"></a><strong>length</strong></h3><p> 设置或返回数组元素的个数。<br> 兼容性：所有主要浏览器都支持length 属性。<br> 语法：</p>
+<pre><code class="javascript"> console.log(arr.length) // 4</code></pre>
+<p> JavaScript 版本:1.1</p>
+<h3 id="prototype"><a href="#prototype" class="headerlink" title="prototype"></a><strong>prototype</strong></h3><p>允许你向数组对象添加属性或方法。所有的Array对象将继承这个方法或属性<br>兼容性：所有主要浏览器都支持prototype 属性。<br>语法：</p>
+<pre><code class="javascript">Array.prototype.myUcase=function(){
+    for (i=0;i&lt;this.length;i++){
+       this[i]=this[i].toUpperCase();
+    }
+}
+arr.myUcase();
+console.log(arr); //BANANA,ORANGE,APPLE,MANGO</code></pre>
+<p>JavaScript 版本:1.1<br>&nbsp;</p>
+<h2 id="数组对象方法"><a href="#数组对象方法" class="headerlink" title="数组对象方法"></a><strong>数组对象方法</strong></h2><h3 id="concat"><a href="#concat" class="headerlink" title="concat()"></a><strong>concat()</strong></h3><h3 id="jion"><a href="#jion" class="headerlink" title="jion()"></a><strong>jion()</strong></h3><h3 id="pop"><a href="#pop" class="headerlink" title="pop()"></a><strong>pop()</strong></h3><h3 id="push"><a href="#push" class="headerlink" title="push()"></a><strong>push()</strong></h3><h3 id="reverse"><a href="#reverse" class="headerlink" title="reverse()"></a><strong>reverse()</strong></h3><h3 id="shift"><a href="#shift" class="headerlink" title="shift()"></a><strong>shift()</strong></h3><h3 id="slice"><a href="#slice" class="headerlink" title="slice()"></a><strong>slice()</strong></h3><h3 id="sort"><a href="#sort" class="headerlink" title="sort()"></a><strong>sort()</strong></h3><h3 id="splice"><a href="#splice" class="headerlink" title="splice()"></a><strong>splice()</strong></h3><h3 id="toSource"><a href="#toSource" class="headerlink" title="toSource()"></a><strong>toSource()</strong></h3><h3 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title="toString()"></a><strong>toString()</strong></h3><h3 id="toLocaleString-NaN"><a href="#toLocaleString-NaN" class="headerlink" title="toLocaleString()"></a><strong>toLocaleString()</strong></h3><h3 id="unshift"><a href="#unshift" class="headerlink" title="unshift()"></a><strong>unshift()</strong></h3><h3 id="valueOf-NaN"><a href="#valueOf-NaN" class="headerlink" title="valueOf()"></a><strong>valueOf()</strong></h3>
             </div>
             <hr>
             <div>
               <p>
                 
+                  <span>
+                <i class="iconfont icon-inbox"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/js/">js</a>
+                      &nbsp;
+                    
+                  </span>&nbsp;&nbsp;
+                
                 
                   <span>
                 <i class="iconfont icon-tag"></i>
                     
-                      <a class="hover-with-bg" href="/tags/github/">github</a>
-                    
-                      <a class="hover-with-bg" href="/tags/hexo/">hexo</a>
-                    
-                      <a class="hover-with-bg" href="/tags/node/">node</a>
+                      <a class="hover-with-bg" href="/tags/javascript/">javascript</a>
                     
                   </span>
                 
               </p>
               
-                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+                <p class="note note-warning">
+                  本文作者：吴意外i<br/>
+                  
+                  本文链接：http://localhost:4000/posts/7ab8efc9/<br/>
+                  本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！
+                </p>
               
               
                 <div class="post-prevnext row">
@@ -222,8 +239,8 @@
                   <div class="post-next col-6">
                     
                     
-                      <a href="/posts/7a776471.html">
-                        <span class="hidden-mobile">我的第一篇文章</span>
+                      <a href="/posts/298c18ca/">
+                        <span class="hidden-mobile">使用hexo+github 搭建个人博客</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="fa fa-chevron-right"></i>
                       </a>
@@ -287,39 +304,22 @@
   
 
   
-    <!-- APlayer 音乐播放器 -->
-    <div id="aplayer"></div>
-    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
-<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
-<script type="text/javascript">
-  var oldLoadAp = window.onload;
-  window.onload = function () {
-    oldLoadAp && oldLoadAp();
-
-    new APlayer({
-      container: document.getElementById('aplayer'),
-      fixed: true,
-      autoplay: 'false' === 'true',
-      loop: 'all',
-      order: 'random',
-      theme: '#b7daff',
-      preload: 'none',
-      audio: [{"name":"name","artist":"artist","url":"/songs/test.mp3","cover":"/img/cover.jpg"},{"name":"name","artist":"artist","url":"https://...url.mp3","cover":"https://...cover.jpg"}]
-    });
-  }
-</script>
-
-  
 
   
 
   <footer class="mt-5">
   <div class="text-center py-3">
     <div>
-      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <a href="http://localhost:4000">吴意外i</a>
+    </div>
+    <div>
+      本站由<a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>强力驱动
       <i class="iconfont icon-love"></i>
-      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+      主题：<a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
         <span>Fluid</span></a>
+    </div>
+    <div>
+      <p class="hitokoto">用代码表达言语的魅力，用代码书写山河的壮丽。</p>
     </div>
     
   <div>
@@ -351,6 +351,7 @@
 <script  src="https://cdn.staticfile.org/popper.js/1.16.1/umd/popper.min.js" ></script>
 <script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
 <script  src="/js/main.js" ></script>
+<script  src="https://v1.hitokoto.cn/?encode=js&c=k&select=.hitokoto" ></script>
 
 
   <script  src="/js/lazyload.js" ></script>
@@ -448,7 +449,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "使用hexo+github 搭建个人博客&nbsp;",
+        "javascript Array 对象&nbsp;",
       ],
       cursorChar: "❤",
       typeSpeed: 70,

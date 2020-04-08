@@ -4,12 +4,43 @@
   
   
   <entry>
+    <title>javascript Array 对象</title>
+    <link href="/posts/7ab8efc9/"/>
+    <url>/posts/7ab8efc9/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Array对象"><a href="#Array对象" class="headerlink" title="Array对象"></a><strong>Array对象</strong></h2><p>Array 对象用于在变量中存储多个值:</p><pre><code class="javascript"> var arr = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];  //以下所有数组操作以当前数组为例 // 所有console.log后面的注释均为输出结果</code></pre><p>第一个数组元素的索引值为 0，第二个索引值为 1，以此类推。</p><h2 id="数组属性"><a href="#数组属性" class="headerlink" title="数组属性"></a><strong>数组属性</strong></h2><h3 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a><strong>constructor</strong></h3><p> 返回创建数组对象的原型函数。</p><p> 兼容性： 所有主流浏览器都支持 constructor 属性。<br> 语法：</p><pre><code class="javascript"> console.log(arr.constructor) // function Array() { [native code] }</code></pre><p> JavaScript 版本: 1.1</p><h3 id="length"><a href="#length" class="headerlink" title="length"></a><strong>length</strong></h3><p> 设置或返回数组元素的个数。<br> 兼容性：所有主要浏览器都支持length 属性。<br> 语法：</p><pre><code class="javascript"> console.log(arr.length) // 4</code></pre><p> JavaScript 版本:1.1</p><h3 id="prototype"><a href="#prototype" class="headerlink" title="prototype"></a><strong>prototype</strong></h3><p>允许你向数组对象添加属性或方法。所有的Array对象将继承这个方法或属性<br>兼容性：所有主要浏览器都支持prototype 属性。<br>语法：</p><pre><code class="javascript">Array.prototype.myUcase=function(){    for (i=0;i&lt;this.length;i++){       this[i]=this[i].toUpperCase();    }}arr.myUcase();console.log(arr); //BANANA,ORANGE,APPLE,MANGO</code></pre><p>JavaScript 版本:1.1<br>&nbsp;</p><h2 id="数组对象方法"><a href="#数组对象方法" class="headerlink" title="数组对象方法"></a><strong>数组对象方法</strong></h2><h3 id="concat"><a href="#concat" class="headerlink" title="concat()"></a><strong>concat()</strong></h3><h3 id="jion"><a href="#jion" class="headerlink" title="jion()"></a><strong>jion()</strong></h3><h3 id="pop"><a href="#pop" class="headerlink" title="pop()"></a><strong>pop()</strong></h3><h3 id="push"><a href="#push" class="headerlink" title="push()"></a><strong>push()</strong></h3><h3 id="reverse"><a href="#reverse" class="headerlink" title="reverse()"></a><strong>reverse()</strong></h3><h3 id="shift"><a href="#shift" class="headerlink" title="shift()"></a><strong>shift()</strong></h3><h3 id="slice"><a href="#slice" class="headerlink" title="slice()"></a><strong>slice()</strong></h3><h3 id="sort"><a href="#sort" class="headerlink" title="sort()"></a><strong>sort()</strong></h3><h3 id="splice"><a href="#splice" class="headerlink" title="splice()"></a><strong>splice()</strong></h3><h3 id="toSource"><a href="#toSource" class="headerlink" title="toSource()"></a><strong>toSource()</strong></h3><h3 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title="toString()"></a><strong>toString()</strong></h3><h3 id="toLocaleString-NaN"><a href="#toLocaleString-NaN" class="headerlink" title="toLocaleString()"></a><strong>toLocaleString()</strong></h3><h3 id="unshift"><a href="#unshift" class="headerlink" title="unshift()"></a><strong>unshift()</strong></h3><h3 id="valueOf-NaN"><a href="#valueOf-NaN" class="headerlink" title="valueOf()"></a><strong>valueOf()</strong></h3>]]></content>
+    
+    
+    <categories>
+      
+      <category>js</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>javascript</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>使用hexo+github 搭建个人博客</title>
-    <link href="/posts/298c18ca.html"/>
-    <url>/posts/298c18ca.html</url>
+    <link href="/posts/298c18ca/"/>
+    <url>/posts/298c18ca/</url>
     
     <content type="html"><![CDATA[<p>我是一名技术不咋滴的前端开发工程师，一直以来都想搭建一个个人的博客，用来整理和记录日常的生活和学习心得，但是……（此处省略一万字），今天终于“它来了，它来了~”。</p><!-- 欢迎来到[Hexo](https://hexo.io/)! 这是你的第一篇文章。 查看 [文档](https://hexo.io/docs/) 了解更多信息。 如果你在使用Hexo时遇到任何问题， 你可以在[故障排除](https://hexo.io/docs/troubleshooting.html)中找到答案，或者你可以在[GitHub](https://github.com/hexojs/hexo/issues)上问我。 --><h3 id="创建一篇文章"><a href="#创建一篇文章" class="headerlink" title="创建一篇文章"></a>创建一篇文章</h3><pre><code class="bash">$ hexo new &quot;文章标题&quot;</code></pre><p>更多信息: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">创作文章</a></p><h3 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h3><pre><code class="bash">$ hexo server</code></pre><p>更多信息: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">启动服务</a></p><h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><pre><code class="bash">$ hexo generate</code></pre><p>更多信息: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">生成文件</a></p><h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><pre><code class="bash">$ hexo deploy</code></pre><p>更多信息: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">站点部署</a></p>]]></content>
     
+    
+    <categories>
+      
+      <category>Hexo 博客</category>
+      
+    </categories>
     
     
     <tags>
@@ -28,11 +59,17 @@
   
   <entry>
     <title>我的第一篇文章</title>
-    <link href="/posts/7a776471.html"/>
-    <url>/posts/7a776471.html</url>
+    <link href="/posts/7a776471/"/>
+    <url>/posts/7a776471/</url>
     
     <content type="html"><![CDATA[<p>你好，欢迎来到我的个人技术博客。</p>]]></content>
     
+    
+    <categories>
+      
+      <category>杂谈</category>
+      
+    </categories>
     
     
     <tags>
