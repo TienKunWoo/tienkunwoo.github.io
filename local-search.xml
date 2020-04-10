@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>千峰教育node.js学习</title>
+    <link href="/posts/4bf83fc5/"/>
+    <url>/posts/4bf83fc5/</url>
+    
+    <content type="html"><![CDATA[<h2 id="什么是node-js"><a href="#什么是node-js" class="headerlink" title="什么是node.js"></a>什么是node.js</h2><p>chrome V8 runtime<br>事件驱动<br>非阻塞I/O<br>I/O input output  输入输出流  正常下I/O 操作都是阻塞的<br>网络请求 数据库处理  文件的读写<br>优点 ： 高并发处理</p><h2 id="为什么学习NODE"><a href="#为什么学习NODE" class="headerlink" title="为什么学习NODE"></a>为什么学习NODE</h2><ol><li>防止甩锅，明确数据交互错误是谁的问题</li><li>能够书写api 斜杠青年（有第二份收入）</li><li>了解后端交互流程</li><li>全栈开发</li></ol><h2 id="api接口"><a href="#api接口" class="headerlink" title="api接口"></a>api接口</h2><p><a href="http://47.95.207.1:3000/apidoc/" target="_blank" rel="noopener">api接口文档</a></p><h2 id="js运行环境"><a href="#js运行环境" class="headerlink" title="js运行环境"></a>js运行环境</h2><ul><li>浏览器<ul><li>基本语法</li><li>BOM </li><li>DOM</li><li>AJAX</li><li>系统文件数据库</li></ul></li><li>服务器<ul><li>基本语法</li><li>能操作数据库</li><li>能操作本地文件</li></ul></li></ul><p>限制语言能力的不是语言本身，而是语言的运行环境</p><h2 id="nvm使用-（node-version-manger）nodejs版本管理工具"><a href="#nvm使用-（node-version-manger）nodejs版本管理工具" class="headerlink" title="nvm使用 （node version manger）nodejs版本管理工具"></a>nvm使用 （node version manger）nodejs版本管理工具</h2><h4 id="windows-安装"><a href="#windows-安装" class="headerlink" title="windows 安装"></a>windows 安装</h4><p>安装之前要把电脑上原有的node卸载<a href="https://www.cnblogs.com/fighxp/p/7410235.html" target="_blank" rel="noopener">教程</a><br>  <a href="https://blog.csdn.net/sinat_23958625/article/details/86491282" target="_blank" rel="noopener">安装教程</a></p><ol><li><a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="noopener">nvm下载</a>选择第三个 nvm-noinstall.zip</li><li>成功安装的nvm标志（命令行：nvm）</li><li>配置淘宝镜像<ol><li>打开nvm的安装路径，默认安装路径是：C:\Users\Administrator\AppData\Roaming\nvm</li><li>打开settings.txt，加入下面文件<pre><code>root: C:\Users\zhong\AppData\Roaming\nvm  path: C:\Program Files\nodejs arch: 64 proxy: nonenode_mirror: http://npm.taobao.org/mirrors/node/npm_mirror: https://npm.taobao.org/mirrors/npm/</code></pre></li><li>nvm安装node<ol><li>安装命令(version就是要安装的node版本，官网可以查看)<pre><code>nvm install version</code></pre></li></ol></li><li>切换node版本<ol><li>查询所有的已安装得node版本<pre><code>nvmlist </code></pre></li><li>切换node命令<pre><code>nvm use version</code></pre></li><li><h3 id="配置npm源"><a href="#配置npm源" class="headerlink" title="配置npm源"></a>配置npm源</h3><pre><code>$ npm config set registry https://registry.npm.taobao.org// 通过下面的方法验证是否成功npm config get registry // 或npm info express</code></pre><h3 id="node-运行环境-REPL"><a href="#node-运行环境-REPL" class="headerlink" title="node 运行环境 REPL"></a>node 运行环境 REPL</h3>直接在命令行书写</li></ol></li></ol></li></ol><h3 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h3><ul><li>内置模块(node提供的模块)<ul><li>文件操作</li></ul></li><li>第三方模块</li><li>自定义模块<ul><li>创建一个模块 （一个Js文件一个模块）<pre><code class="js">     var name = {         sayHello(){             console.log(&#39;你好韩梅梅&#39;)         }     }</code></pre><ul><li>导出一个模块<pre><code class="js">module.exports = name</code></pre></li><li>引入一个模块<pre><code class="js">var Module = require(&#39;./module&#39;)</code></pre></li><li>调用模块<pre><code class="js">Module.sayHello();</code></pre><h3 id="打印当前目录的目录树"><a href="#打印当前目录的目录树" class="headerlink" title="打印当前目录的目录树"></a>打印当前目录的目录树</h3></li></ul></li></ul><ol><li>实现效果</li><li>分析功能点 </li></ol></li><li>当前目录结构</li><li>分辨是文件还是文件夹</li><li></li></ul><h3 id="怎么看英文文档"><a href="#怎么看英文文档" class="headerlink" title="怎么看英文文档"></a>怎么看英文文档</h3><ul><li>一般中括号包括的是可选项</li><li></li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>nodeJs</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>javascript Array 对象</title>
     <link href="/posts/7ab8efc9/"/>
     <url>/posts/7ab8efc9/</url>

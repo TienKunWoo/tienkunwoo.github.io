@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="吴意外i">
   <meta name="keywords" content="">
-  <title>使用hexo+github 搭建个人博客 - 吴意外i</title>
+  <title>千峰教育node.js学习 - 吴意外i</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css" />
 <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
@@ -130,7 +130,7 @@
               
                 <p class="mt-3 post-meta">
                   <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-                  星期二, 四月 7日 2020, 10:27 上午
+                  星期五, 四月 10日 2020, 9:58 上午
                 </p>
               
 
@@ -139,7 +139,7 @@
                   
                   <span class="post-meta">
                     <i class="far fa-chart-bar"></i>
-                    137 字
+                    534 字
                   </span>
                 
 
@@ -149,7 +149,7 @@
                       <i class="far fa-clock"></i>
                     
                     
-                    1
+                    6
                      分钟
                   </span>
                 
@@ -178,42 +178,106 @@
           <div class="post-content mx-auto" id="post">
             
             <div class="markdown-body">
-              <p>我是一名技术不咋滴的前端开发工程师，一直以来都想搭建一个个人的博客，用来整理和记录日常的生活和学习心得，但是……（此处省略一万字），今天终于“它来了，它来了~”。</p>
-<!-- 欢迎来到[Hexo](https://hexo.io/)! 这是你的第一篇文章。 查看 [文档](https://hexo.io/docs/) 了解更多信息。 如果你在使用Hexo时遇到任何问题， 你可以在[故障排除](https://hexo.io/docs/troubleshooting.html)中找到答案，或者你可以在[GitHub](https://github.com/hexojs/hexo/issues)上问我。 -->
-
-
-
-<h3 id="创建一篇文章"><a href="#创建一篇文章" class="headerlink" title="创建一篇文章"></a>创建一篇文章</h3><pre><code class="bash">$ hexo new &quot;文章标题&quot;</code></pre>
-<p>更多信息: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">创作文章</a></p>
-<h3 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h3><pre><code class="bash">$ hexo server</code></pre>
-<p>更多信息: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">启动服务</a></p>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><pre><code class="bash">$ hexo generate</code></pre>
-<p>更多信息: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">生成文件</a></p>
-<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><pre><code class="bash">$ hexo deploy</code></pre>
-<p>更多信息: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">站点部署</a></p>
+              <h2 id="什么是node-js"><a href="#什么是node-js" class="headerlink" title="什么是node.js"></a>什么是node.js</h2><p>chrome V8 runtime<br>事件驱动<br>非阻塞I/O<br>I/O input output  输入输出流  正常下I/O 操作都是阻塞的<br>网络请求 数据库处理  文件的读写<br>优点 ： 高并发处理</p>
+<h2 id="为什么学习NODE"><a href="#为什么学习NODE" class="headerlink" title="为什么学习NODE"></a>为什么学习NODE</h2><ol>
+<li>防止甩锅，明确数据交互错误是谁的问题</li>
+<li>能够书写api 斜杠青年（有第二份收入）</li>
+<li>了解后端交互流程</li>
+<li>全栈开发</li>
+</ol>
+<h2 id="api接口"><a href="#api接口" class="headerlink" title="api接口"></a>api接口</h2><p><a href="http://47.95.207.1:3000/apidoc/" target="_blank" rel="noopener">api接口文档</a></p>
+<h2 id="js运行环境"><a href="#js运行环境" class="headerlink" title="js运行环境"></a>js运行环境</h2><ul>
+<li>浏览器<ul>
+<li>基本语法</li>
+<li>BOM </li>
+<li>DOM</li>
+<li>AJAX</li>
+<li>系统文件数据库</li>
+</ul>
+</li>
+<li>服务器<ul>
+<li>基本语法</li>
+<li>能操作数据库</li>
+<li>能操作本地文件</li>
+</ul>
+</li>
+</ul>
+<p>限制语言能力的不是语言本身，而是语言的运行环境</p>
+<h2 id="nvm使用-（node-version-manger）nodejs版本管理工具"><a href="#nvm使用-（node-version-manger）nodejs版本管理工具" class="headerlink" title="nvm使用 （node version manger）nodejs版本管理工具"></a>nvm使用 （node version manger）nodejs版本管理工具</h2><h4 id="windows-安装"><a href="#windows-安装" class="headerlink" title="windows 安装"></a>windows 安装</h4><p>安装之前要把电脑上原有的node卸载<a href="https://www.cnblogs.com/fighxp/p/7410235.html" target="_blank" rel="noopener">教程</a><br>  <a href="https://blog.csdn.net/sinat_23958625/article/details/86491282" target="_blank" rel="noopener">安装教程</a></p>
+<ol>
+<li><a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="noopener">nvm下载</a>选择第三个 nvm-noinstall.zip</li>
+<li>成功安装的nvm标志（命令行：nvm）</li>
+<li>配置淘宝镜像<ol>
+<li>打开nvm的安装路径，默认安装路径是：C:\Users\Administrator\AppData\Roaming\nvm</li>
+<li>打开settings.txt，加入下面文件<pre><code>root: C:\Users\zhong\AppData\Roaming\nvm  
+path: C:\Program Files\nodejs 
+arch: 64 
+proxy: none
+node_mirror: http://npm.taobao.org/mirrors/node/
+npm_mirror: https://npm.taobao.org/mirrors/npm/</code></pre></li>
+<li>nvm安装node<ol>
+<li>安装命令(version就是要安装的node版本，官网可以查看)<pre><code>nvm install version</code></pre></li>
+</ol>
+</li>
+<li>切换node版本<ol>
+<li>查询所有的已安装得node版本<pre><code>nvmlist </code></pre></li>
+<li>切换node命令<pre><code>nvm use version</code></pre></li>
+<li><h3 id="配置npm源"><a href="#配置npm源" class="headerlink" title="配置npm源"></a>配置npm源</h3><pre><code>$ npm config set registry https://registry.npm.taobao.org
+// 通过下面的方法验证是否成功
+npm config get registry 
+// 或
+npm info express</code></pre><h3 id="node-运行环境-REPL"><a href="#node-运行环境-REPL" class="headerlink" title="node 运行环境 REPL"></a>node 运行环境 REPL</h3>直接在命令行书写</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h3><ul>
+<li>内置模块(node提供的模块)<ul>
+<li>文件操作</li>
+</ul>
+</li>
+<li>第三方模块</li>
+<li>自定义模块<ul>
+<li>创建一个模块 （一个Js文件一个模块）<pre><code class="js">     var name = {
+         sayHello(){
+             console.log(&#39;你好韩梅梅&#39;)
+         }
+     }</code></pre>
+<ul>
+<li>导出一个模块<pre><code class="js">module.exports = name</code></pre>
+</li>
+<li>引入一个模块<pre><code class="js">var Module = require(&#39;./module&#39;)</code></pre>
+</li>
+<li>调用模块<pre><code class="js">Module.sayHello();</code></pre>
+<h3 id="打印当前目录的目录树"><a href="#打印当前目录的目录树" class="headerlink" title="打印当前目录的目录树"></a>打印当前目录的目录树</h3></li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>实现效果</li>
+<li>分析功能点 </li>
+</ol>
+</li>
+<li>当前目录结构</li>
+<li>分辨是文件还是文件夹</li>
+<li></li>
+</ul>
+<h3 id="怎么看英文文档"><a href="#怎么看英文文档" class="headerlink" title="怎么看英文文档"></a>怎么看英文文档</h3><ul>
+<li>一般中括号包括的是可选项</li>
+<li></li>
+</ul>
 
             </div>
             <hr>
             <div>
               <p>
                 
-                  <span>
-                <i class="iconfont icon-inbox"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/Hexo-%E5%8D%9A%E5%AE%A2/">Hexo 博客</a>
-                      &nbsp;
-                    
-                  </span>&nbsp;&nbsp;
-                
                 
                   <span>
                 <i class="iconfont icon-tag"></i>
                     
-                      <a class="hover-with-bg" href="/tags/github/">github</a>
-                    
-                      <a class="hover-with-bg" href="/tags/hexo/">hexo</a>
-                    
-                      <a class="hover-with-bg" href="/tags/node/">node</a>
+                      <a class="hover-with-bg" href="/tags/nodeJs/">nodeJs</a>
                     
                   </span>
                 
@@ -222,7 +286,7 @@
                 <p class="note note-warning">
                   本文作者：吴意外i<br/>
                   
-                  本文链接：http://localhost:4000/posts/298c18ca/<br/>
+                  本文链接：http://localhost:4000/posts/4bf83fc5/<br/>
                   本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！
                 </p>
               
@@ -231,18 +295,12 @@
                   <div class="post-prev col-6">
                     
                     
-                      <a href="/posts/7ab8efc9/">
-                        <i class="fa fa-chevron-left"></i>
-                        <span class="hidden-mobile">javascript Array 对象</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </div>
                   <div class="post-next col-6">
                     
                     
-                      <a href="/posts/7a776471/">
-                        <span class="hidden-mobile">我的第一篇文章</span>
+                      <a href="/posts/7ab8efc9/">
+                        <span class="hidden-mobile">javascript Array 对象</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="fa fa-chevron-right"></i>
                       </a>
@@ -451,7 +509,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "使用hexo+github 搭建个人博客&nbsp;",
+        "千峰教育node.js学习&nbsp;",
       ],
       cursorChar: "❤",
       typeSpeed: 70,
